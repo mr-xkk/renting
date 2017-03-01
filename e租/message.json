@@ -1,0 +1,25 @@
+{
+  "detail":[
+    {"imgscr":"images/photo_03.jpg",
+      "name":"Procrastination",
+      "title":"金园华都找爱干净的室友合租",
+      "imgsrc1":"images/find_03.jpg",
+      "imgsrc2":"images/find_05.jpg",
+      "imgsrc3":"images/find_03.jpg"
+    },
+    {"imgscr":"images/nine.jpeg",
+      "name":"Abbott",
+      "title":"abc城找土豪室友...",
+      "imgsrc1":"images/find_09.jpg",
+      "imgsrc2":"images/find_10.jpg",
+      "imgsrc3":"images/find_03.jpg"
+    },
+    {"imgscr":"images/dde.jpg",
+      "name":"Dave",
+      "title":"找个爱游戏的室友开黑!!!",
+      "imgsrc1":"images/find_05.jpg",
+      "imgsrc2":"images/find_09.jpg",
+      "imgsrc3":"images/find_10.jpg"
+    }
+  ]
+}

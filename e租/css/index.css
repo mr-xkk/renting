@@ -1,0 +1,160 @@
+.start_first{
+    background: url("../images/start%20(1).jpg") no-repeat center/contain;
+}
+.start_second{
+    background: url("../images/start%20(2).jpg") no-repeat center/contain;
+}
+#m_nav .slider{
+    height: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+#m_nav .slider img{
+    height: 80%;
+}
+#m_nav .slide-icon{
+    font-size: 200px;
+    color:#0a9dc7;
+}
+#m_img{
+    height: 50%;
+    margin-top: 100px;
+}
+#m_img p{
+    font-size: 50px;
+    font-weight: bold;
+    color:#34c98f;
+}
+#m_img h3{
+    font-size: 30px;
+    font-weight: bold;
+    color:#34c98f;
+}
+.m_bg{
+    background: #34c98f;
+}
+.m_color{
+    color: #fff;
+}
+#m_city .bar-header{
+    background: #34c98f;
+}
+#m_view .item{
+    border:none;
+}
+
+#m_view .button{
+    display: inline-block;
+    border-radius: 50%;
+    color:#f1f2f3;
+    height: 20%;
+    width: 30px;
+    text-align: center;
+}
+#m_view .button i{
+    font-size: 35px;
+}
+#m_row{
+    margin-top: 65px;
+}
+#m_brow{
+   text-align: center;
+    margin-top: 50px;
+}
+#m_row{
+    text-align: center;
+}
+#m_change{
+    margin-top: 600px;
+}
+#m_newrow{
+    text-align: center;
+}
+#l_content{
+    margin-top: 640px;
+}
+.price{
+    float:right;
+}
+.m_icon{
+    margin-top:25px;
+    font-size: 8px;
+}
+.m_licon{
+    float:left;
+    border:1px solid #0c60ee;
+    border-radius:12px;
+    text-align: center;
+    padding: 1px 3px;
+    color:#0c60ee;
+}
+.three{
+    border:1px solid #ff3b30;
+    color:#ff3b30;
+}
+.m_ricon{
+    float:right;
+    font-size: 20px;
+    margin: 0 3px;
+    color:#fff;
+    background: #0a9dc7;
+    border-radius:5px;
+    padding: 2px;
+}
+.yellow{
+    background: #e6b500;
+}
+.green{
+    background:#4cd964;
+}
+.spanClickStyle{
+    color:#e6b500;
+}
+#find_left{
+    background:url(../images/20160912124758_WEQ4x.jpeg) no-repeat left/cover;
+    padding-top: 44px;
+}
+#find_left .item{
+    opacity: 0.8;
+}
+#collection_nav{
+    background: #34c98f;
+}
+#collection_nav .bar-header{
+    background: #34c98f;
+}
+#pricegreen .pricegreen{
+    color:#4cd964;
+    font-weight: bold;
+}
+#box .slider-slide{
+    width:100%;
+    height: 340px;
+}
+#box .slider-slide>img{
+    width:100%;
+    height: 100%;
+}
+#pricei{
+    color:#ff3b30
+}
+#pricei2{
+    color:#0c60ee;
+}
+/*------------------p------------------*/
+#btn_group li{
+    cursor:pointer;
+    height:40px;
+    line-height:40px;
+    float:left;
+    margin:5px;
+    text-align:center;}
+.selected {border-bottom:solid 2px #34c98f; color:#34c98f}
+.hide{display:none;}
+.show{display:block;}
+#pre_card .item{
+    width:100%;
+}
+#pre_nav{
+    color:#34c98f ;
+}

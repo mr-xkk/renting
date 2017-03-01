@@ -1,0 +1,18 @@
+<ion-view id="m_city" view-title="选择城市" ng-controller="cityCtrl">
+    <ion-nav-bar class="bar-balanced">
+        <ion-nav-back-button class="m_color"></ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content >
+        当前定位城市
+        <div class="list">
+            <a class="item" ng-repeat="num in data">{{num.province}}</a>
+        </div>
+        已开通城市
+        <div class="list" ng-repeat="add in address">
+            <a class="item" ng-click="transfer(add)"
+                href="#/tabs/city?:province={{add.province}}">
+                {{add.province}}
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

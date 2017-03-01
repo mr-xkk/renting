@@ -1,0 +1,73 @@
+<ion-view id="m_city" view-title="个人中心" ng-controller="myselfCtrl">
+    <ion-nav-bar class="bar-balanced">
+        <ion-nav-back-button class="m_color"></ion-nav-back-button>
+    </ion-nav-bar>
+        <ion-side-menus>
+            <ion-side-menu side="left" id="find_left">
+                <div class="list">
+
+                    <a class="item item-avatar" href="javascript:;">
+                        <img src="images/photo_03.jpg">
+                        <h2>Procrastination</h2>
+                        <p>一个美好的选择恐惧症患者.</p>
+                    </a>
+                    <a class="item item-icon-left" href="javascript:;">
+                        <i class="icon ion-email"></i>
+                        我的留言
+                    </a>
+                    <a class="item item-icon-left item-icon-right" href="javascript:;">
+                        <i class="icon ion-chatbubble-working"></i>
+                        未读消息
+                        <span class="badge badge-assertive">0</span>
+                    </a>
+
+                    <a class="item item-icon-left" href="javascript:;">
+                        <i class="icon ion-mic-a"></i>
+                        备忘录
+                        <span class="item-note">
+                    明天和tony吃饭
+                    </span>
+                    </a>
+                    <a class="item item-icon-left" href="javascript:;">
+                        <i class="icon ion-person-stalker"></i>
+                        我的室友
+                    </a>
+                </div>
+            </ion-side-menu>
+            <ion-side-menu-content >
+                <ion-header-bar class="item-input-inset m_bg">
+                    <button class="button button-icon ion-ios-drag m_color">
+                    </button>
+                    <button class="button button-icon ion-ios-chatbubble-outline m_color">
+                        <span class="badge badge-assertive">...</span>
+                    </button>
+                </ion-header-bar>
+                <ion-content>
+                    <div class="list">
+                        <a class="item item-avatar stable-bg" href="javascript:;">
+                            <img src="images/photo_03.jpg">
+                            <h2>Procrastination</h2>
+                            <p>一个美好的选择恐惧症患者.</p>
+                        </a>
+                        <br>
+                        <a class="item item-icon-left" href="javascript:;"
+                        ui-sref="tabs.preferential">
+                            <i class="icon ion-ios-list-outline"></i>
+                            我的优惠券
+                        </a>
+                        <a class="item item-icon-left item-icon-right" href="javascript:;"
+                           ui-sref="tabs.collection">
+                            <i class="icon ion-android-folder-open"></i>
+                            我的收藏
+                            <span class="badge badge-assertive" ng-model="num">{{num}}</span>
+                        </a>
+                        <br><br><br>
+                        <a class="item item-icon-left" href="javascript:;">
+                            <i class="icon ion-drag"></i>
+                            设置
+                        </a>
+                    </div>
+                </ion-content>
+            </ion-side-menu-content>
+        </ion-side-menus>
+</ion-view>

@@ -1,0 +1,70 @@
+<ion-view id="m_city" view-title="找室友">
+    <ion-nav-bar class="bar-balanced">
+        <ion-nav-back-button class="m_color"></ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-side-menus>
+        <ion-side-menu side="left" id="find_left">
+            <div class="list">
+
+                <a class="item item-avatar" href="javascript:;">
+                    <img src="images/photo_03.jpg">
+                    <h2>Procrastination</h2>
+                    <p>一个美好的选择恐惧症患者.</p>
+                </a>
+                <a class="item item-icon-left" href="javascript:;">
+                    <i class="icon ion-email"></i>
+                    我的留言
+                </a>
+
+                <a class="item item-icon-left item-icon-right" href="javascript:;">
+                    <i class="icon ion-chatbubble-working"></i>
+                    未读消息
+                    <span class="badge badge-assertive">0</span>
+                </a>
+
+                <a class="item item-icon-left" href="javascript:;">
+                    <i class="icon ion-mic-a"></i>
+                    备忘录
+                    <span class="item-note">
+                    明天和tony吃饭
+                    </span>
+                </a>
+
+                <a class="item item-icon-left" href="javascript:;">
+                    <i class="icon ion-person-stalker"></i>
+                    我的室友
+                </a>
+            </div>
+        </ion-side-menu>
+        <ion-side-menu-content >
+            <ion-header-bar class="item-input-inset m_bg">
+                <button class="button button-icon ion-ios-drag m_color">
+                </button>
+                <button class="button button-icon ion-ios-chatbubble-outline m_color">
+                    <span class="badge badge-assertive">...</span>
+                </button>
+            </ion-header-bar>
+            <ion-content ng-controller="findCtrl">
+                <div class="list card" ng-repeat="infor in information">
+                    <div class="item item-avatar">
+                        <img ng-src="{{infor.imgscr}}">
+                        <h2>{{infor.name}}</h2>
+                        <p>{{infor.title}}</p>
+                    </div>
+                    <div class="row">
+                        <div class="item item-image col-33">
+                            <img ng-src="{{infor.imgsrc1}}">
+                        </div>
+                        <div class="item item-image col-33">
+                            <img ng-src="{{infor.imgsrc2}}">
+                        </div>
+                        <div class="item item-image col-33">
+                            <img ng-src="{{infor.imgsrc3}}">
+                        </div>
+                    </div>
+                    <ion-infinite-scroll on-infinite="getInformation()"  ng-if="page<total" immediate-check="false"></ion-infinite-scroll>
+                </div>
+            </ion-content>
+        </ion-side-menu-content>
+    </ion-side-menus>
+</ion-view>

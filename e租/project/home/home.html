@@ -1,0 +1,140 @@
+<ion-header-bar class="item-input-inset m_bg" ng-controller="homeCtrl">
+    <button class="button button-icon ion-ios-location-outline m_color"
+            ui-sref="tabs.city" ng-repeat="num in data">{{num.province}}</button>
+    <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="搜索附近的房源">
+    </label>
+    <button class="button button-icon ion-ios-chatbubble-outline m_color"></button>
+</ion-header-bar>
+<ion-view id="m_view" ng-controller="homeCtrl">
+    <ion-content>
+        <ion-slide-box id="box" does-continue="true" auto-play="true" slide-interval="2500">
+            <ion-slide>
+                <img src="images/bg3.jpg">
+            </ion-slide>
+            <ion-slide>
+                <img src="images/bg3.jpg">
+            </ion-slide>
+        </ion-slide-box>
+        <ion-item class="row" id="m_brow">
+            <div class="col-33">
+                <button class="button button-large button-positive">
+                    <i class="ion-ios-home-outline"></i>
+                </button>
+                <br>
+                <p>整租</p>
+            </div>
+            <div class="col-33">
+                <button class="button button-large button-calm">
+                    <i class="ion-ios-box-outline"></i>
+                </button>
+                <br>
+                <p>合租</p>
+            </div>
+            <div class="col-33">
+                <button class="button button-large button-energized">
+                    <i class="ion-ios-photos-outline"></i>
+                </button>
+                <br>
+                <p>短租</p>
+            </div>
+        </ion-item>
+        <ion-item class="row" id="m_row">
+            <div class="col-33">
+                <button class="button button-large button-energized">
+                    <i class="ion-ios-star-outline"></i>
+                </button>
+                <br>
+                <p>收藏</p>
+
+            </div>
+            <div class="col-33">
+                <button class="button button-large button-balanced">
+                    <i class="ion-ios-calendar-outline"></i>
+                </button>
+                <br>
+                <p>活动</p>
+            </div>
+            <div class="col-33">
+                <button class="button button-large button-assertive">
+                    <i class="ion-ios-upload-outline"></i>
+                </button>
+                <br>
+                <p>发布房源</p>
+            </div>
+        </ion-item>
+    </ion-content>
+    <ion-content class="has-header" id="m_change">
+        <div class="row list" id="m_newrow">
+                <div class="col-25">
+                    <label class="item item-input item-select">
+                        <div class="input-label">
+                            区域
+                        </div>
+                    <select ng-model="data" ng-options="item.cities for item in data">
+                        <option value="">所在区域</option>
+                    </select>
+                    </label>
+                </div>
+                <div class="col-25">
+                    <label class="item item-input item-select">
+                        <div class="input-label">
+                            租金
+                        </div>
+                        <select>
+                            <option>租金范围</option>
+                            <option>500-1000</option>
+                            <option>1000-2000</option>
+                            <option>2000-4000</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="col-25">
+                    <label class="item item-input item-select">
+                        <div class="input-label">
+                            户型
+                        </div>
+                        <select>
+                            <option>户型,房型</option>
+                            <option>简装</option>
+                            <option>精装</option>
+                            <option>单人公寓</option>
+                            <option>套房</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="col-25">
+                    <label class="item item-input item-select">
+                        <div class="input-label">
+                            更多
+                        </div>
+                        <select>
+                            <option>更多要求</option>
+                            <option>地铁</option>
+                            <option>公交</option>
+                            <option>附近环境</option>
+                        </select>
+                    </label>
+                </div>
+        </div>
+    </ion-content>
+    <ion-content class="has-header" id="l_content">
+        <div class="list">
+            <a class="item item-thumbnail-left" href="javascript:;"
+                    ng-repeat="a in data" ui-sref="tabs.price">
+                <img ng-src="{{a.imgsrc}}">
+                <h2>{{a.size}}</h2>
+                <div class="price">{{a.price}}元<br>&nbsp;&nbsp;&nbsp;&nbsp;每月</div>
+                <p>{{a.add}}</p>
+                <div class="m_icon">
+                    <div class="m_licon">整租</div>
+                    <div class="m_licon three">押一付三</div>
+                    <div class="m_ricon ion-ios-camera-outline"></div>
+                    <div class="m_ricon ion-ios-contact-outline yellow"></div>
+                    <div class="m_ricon ion-ios-list-outline green"></div>
+                </div>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
